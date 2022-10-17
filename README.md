@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a E-commerce website created with Next.JS and Tailwind CSS.
+Every possible features will be added in here for an e-commerce website
 
 ## Getting Started
 
