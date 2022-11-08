@@ -2,7 +2,7 @@ import React from 'react'
 
 const bags = () => {
   return (
-    <div>bags</div>
+    <div>bag</div>
   )
 }
 
