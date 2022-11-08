@@ -1,14 +1,19 @@
-import Navbar from '../components/Navbar'
-import '../styles/globals.css'
-import Footer from '../components/Footer'
+import React from "react";
+import { Toaster } from 'react-hot-toast';
+
+import { Layout, Navbar } from '../components';
+import '../styles/globals.css';
+import { StateContext } from '../context/StateContext';
 
 function MyApp({ Component, pageProps }) {
-  return <>
-  <Navbar/>
+  return (
+  <StateContext>
+  <Layout>
+    <Toaster/>
   <Component {...pageProps} />
-  <Footer/>
-  
-  </>
+  </Layout>
+  </StateContext>
+  )
 }
 
-export default MyApp
+export default MyApp;
