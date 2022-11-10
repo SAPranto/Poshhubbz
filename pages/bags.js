@@ -1,9 +1,9 @@
 import React from "react";
-import { Product, Bags} from '../components';
+import { Product } from '../components';
 import { client } from '../lib/client';
 
 
-const bags = ({ products }) => {
+const bags = ({ bagdata }) => {
   return (
     <div>
       
@@ -13,7 +13,7 @@ const bags = ({ products }) => {
     </div>
 
     <div className="products-page">
-    {products?.map((product) => <Product key={product._id} product={product} />)}
+    {bagdata?.map((product) => <Product key={product._id} product={product} />)}
     </div>
 
   </div>
@@ -21,11 +21,11 @@ const bags = ({ products }) => {
 }
 
 export const getServerSideProps = async () => {
-  const query = '*[_type == "bag"]';
-  const products = await client.fetch(query);
+  const bagquery = '*[_type == "bag"]';
+  const bagdata = await client.fetch(bagquery);
 
   return {
-    props: { products}
+    props: { bagdata }
   }
 }
 
