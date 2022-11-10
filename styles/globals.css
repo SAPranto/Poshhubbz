@@ -186,6 +186,14 @@ nav.navbar ul li a:hover:before {
   margin-top: 20px;
   width: 100%;
 }
+.products-page{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 20px;
+  width: 100%;
+}
 .product-card{
  cursor: pointer;
   transform: scale(1, 1);
