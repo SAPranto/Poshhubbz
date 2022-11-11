@@ -168,6 +168,7 @@ nav.navbar ul li a:hover:before {
 .cart-item-qty{
   position: absolute;
   right: -9px;
+  top: -4px;
   font-size: 12px;
   color: #eee;
   background-color: #f02d34;
@@ -191,8 +192,20 @@ nav.navbar ul li a:hover:before {
   flex-wrap: wrap;
   justify-content: center;
   gap: 120px;
-  margin-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
   width: 100%;
+  animation: fadeIn 0.6s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(600px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 .product-card{
  cursor: pointer;
